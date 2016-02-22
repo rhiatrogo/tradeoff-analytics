@@ -14,8 +14,11 @@ dependencies {
 	compile 'javax.servlet:javax.servlet-api:4.0.0-b01'
 	compile 'org.apache.clerezza.ext:org.json.simple:0.4'
 			
-	compile name: 'watson-developer-cloud-2.7.1'
     compile group: 'com.squareup.okhttp', name: 'okhttp', version:'2.7.0'
     compile group: 'com.google.code.gson', name: 'gson', version:'2.5'
     compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.4'
+	
+	compile 'com.ibm.watson.developer_cloud:java-sdk:2.8.0'
+	
+	testCompile 'junit:junit:4.12'
 }
