@@ -80,25 +80,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <h1> Preference:</h1>
-                    </td>
-                    <td>
-                        <input type="text" name="finalprice" value="1">
-                    </td>
-                    <td>
-                        <input type="text" name="finalram" value="1">
-                    </td>
-                    <td>
-                        <input type="text" name="finalscreen" value="1">
-                    </td>
-                </tr>
-                <tr>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Analyze">
                     </td>
                 </tr>
             </form>
