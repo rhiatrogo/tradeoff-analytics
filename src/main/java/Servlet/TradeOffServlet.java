@@ -51,7 +51,7 @@ public class TradeOffServlet extends HttpServlet {
 			username = "4ef4ee83-8f31-4e9d-a24d-1f21176706d6";
 			String password = "sHtl2NECnYgc";
 			password = "fTfX5iOotIyK";
-            service.setUsernameAndPassword(username, password);
+            service.setUsernameAndPassword(username1, password1);
           
             Problem problem = new Problem("phone");
 
@@ -67,17 +67,11 @@ public class TradeOffServlet extends HttpServlet {
             List< Column> columns = new ArrayList<Column>();
             problem.setColumns(columns);
 
-			/*
-            columns.add(new NumericColumn().withKey(price).withGoal(Goal.fromString(finalprice)).withObjective(true));
-//          columns.add(new NumericColumn().withRange(0, 100).withKey(price).withGoal(Goal.fromString(finalprice)).withObjective(true));
-            columns.add(new NumericColumn().withKey(ram).withGoal(Goal.fromString(finalram)));
-            columns.add(new NumericColumn().withKey(screen).withGoal(Goal.fromString(finalscreen)).withObjective(true));
-			*/
 			
-			columns.add(new NumericColumn().withKey(price).withGoal(Goal.fromString("50")).withObjective(true));
-			columns.add(new NumericColumn().withKey(screen).withGoal(Goal.fromString("5")).withObjective(true));
-			columns.add(new NumericColumn().withKey(ram).withGoal(Goal.fromString("45")));
-			
+			columns.add(new NumericColumn().withRange(0, 100).withKey(price).withGoal(Goal.MIN)
+				.withObjective(true));
+			columns.add(new NumericColumn().withKey(screen).withGoal(Goal.MAX).withObjective(true));
+			columns.add(new NumericColumn().withKey(ram).withGoal(Goal.MAX));
 			
 			
             //Define the options to choose
